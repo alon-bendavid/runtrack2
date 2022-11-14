@@ -27,13 +27,6 @@
 
 
 
-    // echo "Hello LaPlateforme!"; //one line comment 
-
-
-    // echo "Hello LaPlateforme!"; /*milti line comment
-    // multiline*/
-
-
 
 
     ?>
