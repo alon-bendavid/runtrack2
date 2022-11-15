@@ -13,10 +13,8 @@
     // decler number var
 
     for ($x = 0; $x - 1 < 1337; $x++) {
-        if ($x === 42) {
-            echo "<b><u>$x</u></b><br/>";
-        } else {
-            echo "$x<br/> ";
+        if ($x != 26 && $x != 37 && $x != 88 && $x != 1111) {
+            echo  "$x<br/>3233<br/>";
         }
     }
 
