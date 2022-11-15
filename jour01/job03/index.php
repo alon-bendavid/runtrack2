@@ -11,38 +11,45 @@
 
 <body>
     <?php
-    $type = "string";
-
+    $bool = true;
+    $int = 5;
+    $str = "string";
+    $float = 3.6;
 
     ?>
     <table>
-
-        <caption>Comparatif des formules d'abonnement</caption>
-
         <tr>
-            <th><?php echo $type ?></th>
-            <th> Durée</th>
-            <th>Prix</th>
+            <!-- <th><?php echo $type ?></th> -->
+            <th> type</th>
+            <th> name</th>
+            <th>value</th>
         </tr>
 
 
         <tr>
-            <td>Chaton</td>
-            <td>2 mois</td>
-            <td>40 €</td>
+            <td>boolean</td>
+            <td>bool</td>
+            <td><?php echo $bool ?></td>
+
         </tr>
 
         <tr>
-            <td>Elan</td>
-            <td>6 mois</td>
-            <td>110 €</td>
+            <td>integer</td>
+            <td>int</td>
+            <td><?php echo $int ?></td>
         </tr>
 
         <tr>
-            <td>Licorne</td>
-            <td>12 mois</td>
-            <td>200 €</td>
+            <td>str</td>
+            <td>string</td>
+            <td><?php echo $str ?></td>
         </tr>
+        <tr>
+            <td>float</td>
+            <td>float</td>
+            <td><?php echo $float ?></td>
+        </tr>
+
 
     </table>
 
