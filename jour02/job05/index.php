@@ -10,13 +10,18 @@
 
 <body>
     <?php
-    // decler number var
 
-    for ($x = 1; $x - 1 < 1000; $x++) {
-        //find a prime number
-        echo $x;
-        //echo it
+    $n = 1000;
+    for ($i = 2; $i <= $n; $i++) {
+        for ($j = 2; $j <= $n; $i++) {
+            if ($i % $j == 0) {
+                break;
+            }
+        }
 
+        if ($i == $j) {
+            echo "<br/>" . $i;
+        }
     }
 
     ?>
