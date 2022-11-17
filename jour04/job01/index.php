@@ -35,7 +35,7 @@
     <?php
     $count = 0;
     //count the number of boxes
-    foreach ($_GET as $i) {
+    foreach ($_GET as $x) {
 
         $count++;
     }
