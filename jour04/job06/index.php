@@ -18,28 +18,25 @@
 
 <body>
 
-    <form action="" method="post">
+    <form action="" method="get">
 
-        <input type="text" id="name" name="name">
-        <input type="text" id="last-name" name="last-name">
-        <button type="submit">Send -></button>
+        Number: <input type="text" id="Number" name="Number">
+
+        <button type="submit">Submit</button>
     </form>
 
 
 
-    <table>
-        <th>Argument</th>
-        <th>Valeur</th>
-    </table>
-
     <?php
-
-    foreach ($_POST as $x => $value) {
-
-        echo "<table> <tr><td>$x</td><td> $value</td></tr></table>";
+    if ($_GET["Number"] % 2 == 0) {
+        echo "Nombre pair";
+    } else {
+        echo  "Nombre impair.";
     }
 
+
     ?>
+
 
 
 
