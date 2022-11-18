@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- <style>
         table,
         th,
         td {
             border: 0.5px solid black;
             width: 15rem;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -28,11 +28,14 @@
 
 
     <?php
+
+
     if ($_GET["Number"] % 2 == 0) {
         echo "Nombre pair";
-    } else {
-        echo  "Nombre impair.";
+    } elseif ($_GET["Number"] % 2 != 0) {
+        echo "Nombre impair.";
     }
+
 
 
     ?>
