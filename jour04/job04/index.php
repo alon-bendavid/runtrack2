@@ -18,7 +18,7 @@
 
 <body>
 
-    <form action="" method="get">
+    <form action="" method="post">
 
         <input type="text" id="name" name="name">
         <input type="text" id="last-name" name="last-name">
@@ -34,7 +34,7 @@
 
     <?php
 
-    foreach ($_GET as $x => $value) {
+    foreach ($_POST as $x => $value) {
 
         echo "<table> <tr><td>$x</td><td> $value</td></tr></table>";
     }
