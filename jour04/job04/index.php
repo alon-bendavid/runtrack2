@@ -20,26 +20,23 @@
 
     <form action="" method="post">
 
-        <input type="text" id="name" name="name">
-        <input type="text" id="last-name" name="last-name">
+        Username: <input type="text" id="userName" name="userName">
+        Password: <input type="text" id="Password" name="Password">
         <button type="submit">Send -></button>
     </form>
 
 
 
-    <table>
-        <th>Argument</th>
-        <th>Valeur</th>
-    </table>
-
     <?php
-
-    foreach ($_POST as $x => $value) {
-
-        echo "<table> <tr><td>$x</td><td> $value</td></tr></table>";
+    if ($_POST["userName"] == "John" && $_POST["Password"] == "Rambo") {
+        echo "C’est pas ma guerre";
+    } else {
+        echo  "Votre pire cauchemar.";
     }
 
+
     ?>
+
 
 
 
