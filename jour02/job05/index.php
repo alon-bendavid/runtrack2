@@ -10,20 +10,16 @@
 
 <body>
     <?php
+    echo "2 </br>" . "3 </br>" . "5 </br>" . "9 </br>" . "11 </br>";
 
-    $n = 1000;
-    for ($i = 2; $i <= $n; $i++) {
-        for ($j = 2; $j <= $n; $i++) {
-            if ($i % $j == 0) {
-                break;
-            }
-        }
+    for ($num = 2; $num <= 1000; $num++) {
+        if ($num % 2 === 0 or $num % 3 === 0 or $num % 5 === 0 or $num % 7 === 0 or $num % 9 === 0 or $num % 11 === 0) {
+            // echo $num . '</br>';
+        } else {
 
-        if ($i == $j) {
-            echo "<br/>" . $i;
+            echo $num . " </br>";
         }
     }
-
     ?>
 
 </body>
