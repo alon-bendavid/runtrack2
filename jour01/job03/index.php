@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css\style.css"> -->
+    <style>
+        table,
+        th,
+        td {
+            border: 0.5px solid black;
+            width: 15rem;
+        }
+    </style>
 </head>
 
 <body>
