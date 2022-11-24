@@ -54,7 +54,7 @@ function leetSpeak($str)
     // echo $str;
     return $str;
 }
-echo  leetSpeak("streets Are Tiny ");
+echo  leetSpeak("streets Are Tiny in marseiLLe ");
 
 
 ?>
