@@ -1,3 +1,3 @@
 SELECT *  
 FROM etudiants 
-when (prenom,1)= 'T';
+where  prenom LIKE 'T%';
