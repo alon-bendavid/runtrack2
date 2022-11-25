@@ -22,31 +22,22 @@
     //conect into phpmyadmin database
     $mysqli = new mysqli("localhost", "root", "", "jour09");
     //select students table 
-    $request = $mysqli->query("SELECT * from etudiants");
+    $request = $mysqli->query("SELECT * from salles");
     //insert into n array
     // $fetched_table = $request->fetch_array();
     ?>
     <!-- create an html table with students data using php -->
     <table>
         <?php
-        echo "<thead><tr><th>prenom</th>
-        <th>nom</th>
-        <th>naissance</th>
-        <th>sexe</th>
-        <th>email</th>
-         </tr></thead>";
+        echo "<thead><tr>
+        <th>Nom</th>
+        <th>Capacite</th>
+        </tr></thead>";
         //loop tp extract data from table 
         while (($fetched_table = $request->fetch_array())  != null) {
-            echo "<tr>" .
-                "<td>" . $fetched_table['prenom'] . "</td>" .
-                "<td>" . $fetched_table['nom'] . "</td>" .
-                "<td>" . $fetched_table['naissance'] . "</td>" .
-                "<td>" . $fetched_table['sexe'] . "</td>" .
-                "<td>" . $fetched_table['email'] . "</td>" .
-                "</tr>";
+            echo "<tr>" . "<td>" . $fetched_table['nom'] .
+                "</td>" . "<td>" . $fetched_table['capacite'] . "</td>" . "</tr>";
         }
-
-
 
 
         ?>
