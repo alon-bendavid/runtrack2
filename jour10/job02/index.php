@@ -34,7 +34,7 @@
         <th>Capacite</th>
         </tr></thead>";
         //loop tp extract data from table 
-        while (($fetched_table = $request->fetch_array())  != null) {
+        while (($fetched_table = $request->fetch_array())  != 0) {
             echo "<tr>" . "<td>" . $fetched_table['nom'] .
                 "</td>" . "<td>" . $fetched_table['capacite'] . "</td>" . "</tr>";
         }
