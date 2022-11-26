@@ -2,12 +2,12 @@
 session_start(); //start session
 //delete count
 if (isset($_POST['del'])) {
-    $_COOKIE['login'] = 0;
+    $_COOKIE['nbvisites'] = 0;
 }
 //increase cockies count
-setcookie('login', $_COOKIE['login'] += 1, time() + 48000);
+setcookie('nbvisites', $_COOKIE['nbvisites'] += 1, time() + 48000);
 
-echo $_COOKIE['login'];
+echo $_COOKIE['nbvisites'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
