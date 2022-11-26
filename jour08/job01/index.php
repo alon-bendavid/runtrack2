@@ -1,12 +1,17 @@
 <?php
 session_start(); //start session
 
-$_SESSION['nbv'] += 1; //set session variable
-
-//Check if session is set, for some reason 'nbvisites' name doesnt work!
-if (isset($_SESSION['nbv'])) {
-    echo "You visited this page " . $_SESSION['nbv'] . " times";
+if (isset($_POST['del'])) {
+    // session_destroy();
+    $_SESSION['nbv'] = 0;
 }
+
+$_SESSION['nbv'] += 1; //set session variable
+echo "You visited this page " . $_SESSION['nbv'] . " times";
+//Check if session is set, for some reason 'nbvisites' name doesnt work!
+// if (isset($_SESSION['nbv'])) {
+//     echo "You visited this page " . $_SESSION['nbv'] . " times";
+// }
 
 
 ?>
@@ -27,9 +32,6 @@ if (isset($_SESSION['nbv'])) {
         </form>
         <?php
 
-        if (isset($_POST['del'])) {
-            $_SESSION['nbv'] = 0;
-        }
 
         ?>
 
